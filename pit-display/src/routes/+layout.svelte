@@ -63,7 +63,7 @@
               </li>
 
               <li class="nav-item nav-link">
-                <a style="color: #fec42d; text-decoration:dashed" class="nav-link nav-text" aria-current="page" href="/">
+                <a style="color: #fec42d; text-decoration:dashed" class="nav-link nav-text" aria-current="page" href="/mbr">
                   mbr
                 </a>
               </li>

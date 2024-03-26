@@ -93,7 +93,7 @@
     console.log("AAss")
     window.cancelAnimationFrame(requestId);
     requestId = undefined;
-    renderer.clear();
+    if (renderer !== undefined) renderer.clear();
     console.log(scene.children);
     clearScene(scene);
   }
@@ -276,26 +276,26 @@
               
                   <div class = "text-blurb-div">
                     <h4 style="text-decoration: underline">Summary</h4>
-                    Lifts the robot through chain/sprocket and hooks onto the chain. <br>
-                    There is also a winch system that prevents the system from <br>
-                    going back up after the hook has moved down. <br>
-                    <br>
+                    Lifts the robot through chain/sprocket and hooks onto the chain. 
+                    There is also a winch system that prevents the system from 
+                    going back up after the hook has moved down. 
+                    
 
                     <h4 style="text-decoration: underline">Match Functionality</h4>
-                    During the endgame, the driver should align the center of the <br>
-                    robot with the lowest point of the chain using a second driver camera. <br>
-                    When ready, they should hold a button in order to bring the mechanism <br>
-                    down. The driver should release after the hook has successfully lifted <br>
-                    the robot off the ground using the camera to view whether or not the robot <br>
-                    is completely off the ground. The limit switch should stop the hook from <br>
-                    moving further down at its maximum extension point in order to prevent <br>
-                    the mech from overextending. <br>
-                    <br>
+                    During the endgame, the driver should align the center of the 
+                    robot with the lowest point of the chain using a second driver camera. 
+                    When ready, they should hold a button in order to bring the mechanism 
+                    down. The driver should release after the hook has successfully lifted 
+                    the robot off the ground using the camera to view whether or not the robot 
+                    is completely off the ground. The limit switch should stop the hook from 
+                    moving further down at its maximum extension point in order to prevent 
+                    the mech from overextending. 
+                    
 
                     <h4 style="text-decoration: underline">Driver Station Functionality</h4>
-                    The hooks only move down. They move while the driver is <br>
-                     holding the push button and upon release, the hooks stop moving. <br>
-                    <br>
+                    The hooks only move down. They move while the driver is 
+                     holding the push button and upon release, the hooks stop moving. 
+                    
                   </div>
                 </div>
             </div>
@@ -308,29 +308,29 @@
               
                   <div class = "text-blurb-div">
                     <h4 style="text-decoration: underline">Summary</h4>
-                    Run two NEO 1650’s at a ~55 degree angle and at different speeds <br>
-                    to intake from source and shoot at speaker, with a limit switch to <br>
-                    detect a note. <br>
-                    <br>
+                    Run two NEO 1650’s at a ~55 degree angle and at different speeds 
+                    to intake from source and shoot at speaker, with a limit switch to 
+                    detect a note. 
+                    
 
                     <h4 style="text-decoration: underline">Match Functionality</h4>
-                    When aligned to the source, upon input, the motor begins <br>
-                    spinning in intake direction (speed 0.4 on WPILib motor interface) <br>
-                    to ingest the note. Once the limit switch triggers, turn off both motors. <br>
-                    <br>
+                    When aligned to the source, upon input, the motor begins 
+                    spinning in intake direction (speed 0.4 on WPILib motor interface) 
+                    to ingest the note. Once the limit switch triggers, turn off both motors. 
+                    
 
-                    When aligned to the speaker, upon input, the motor begins spinning <br>
-                    in the outtake direction at max speed (1.0 on WPILib motor interface). <br>
-                    The lower motor spins slower than the top motor. The lower motor “feeds” <br>
-                    the note to the top motor to “shoot.” This is copied from the kitbot, <br>
-                    details may be found on the kitbot’s page. <br>
-                    <br>
+                    When aligned to the speaker, upon input, the motor begins spinning 
+                    in the outtake direction at max speed (1.0 on WPILib motor interface). 
+                    The lower motor spins slower than the top motor. The lower motor “feeds” 
+                    the note to the top motor to “shoot.” This is copied from the kitbot, 
+                    details may be found on the kitbot’s page. 
+                    
                     
                     <h4 style="text-decoration: underline">Driver Station Functionality</h4>
-                    Can intake note (motors spinning inwards) with one button. Both motors <br>
-                    spin at the same time. Press the left bumper to rev up top shooter motor, <br>
-                    and after a few seconds, press triangle to trigger bottom shooter motor <br>
-                    and shoot out note. <br>
+                    Can intake note (motors spinning inwards) with one button. Both motors 
+                    spin at the same time. Press the left bumper to rev up top shooter motor, 
+                    and after a few seconds, press triangle to trigger bottom shooter motor 
+                    and shoot out note. 
 
                   </div>
               </div>
@@ -344,29 +344,29 @@
             
                 <div class = "text-blurb-div">
                   <h4 style="text-decoration: underline">Summary</h4>
-                  Run two NEO 1650’s at a ~55 degree angle and at different speeds <br>
-                  to intake from source and shoot at speaker, with a limit switch to <br>
-                  detect a note. <br>
-                  <br>
+                  Run two NEO 1650’s at a ~55 degree angle and at different speeds 
+                  to intake from source and shoot at speaker, with a limit switch to 
+                  detect a note. 
+                  
 
                   <h4 style="text-decoration: underline">Match Functionality</h4>
-                  When aligned to the source, upon input, the motor begins <br>
-                  spinning in intake direction (speed 0.4 on WPILib motor interface) <br>
-                  to ingest the note. Once the limit switch triggers, turn off both motors. <br>
-                  <br>
+                  When aligned to the source, upon input, the motor begins 
+                  spinning in intake direction (speed 0.4 on WPILib motor interface) 
+                  to ingest the note. Once the limit switch triggers, turn off both motors. 
+                  
 
-                  When aligned to the speaker, upon input, the motor begins spinning <br>
-                  in the outtake direction at max speed (1.0 on WPILib motor interface). <br>
-                  The lower motor spins slower than the top motor. The lower motor “feeds” <br>
-                  the note to the top motor to “shoot.” This is copied from the kitbot, <br>
-                  details may be found on the kitbot’s page. <br>
-                  <br>
+                  When aligned to the speaker, upon input, the motor begins spinning 
+                  in the outtake direction at max speed (1.0 on WPILib motor interface). 
+                  The lower motor spins slower than the top motor. The lower motor “feeds” 
+                  the note to the top motor to “shoot.” This is copied from the kitbot, 
+                  details may be found on the kitbot’s page. 
+                  
                   
                   <h4 style="text-decoration: underline">Driver Station Functionality</h4>
-                  Can intake note (motors spinning inwards) with one button. Both motors <br>
-                  spin at the same time. Press the left bumper to rev up top shooter motor, <br>
-                  and after a few seconds, press triangle to trigger bottom shooter motor <br>
-                  and shoot out note. <br>
+                  Can intake note (motors spinning inwards) with one button. Both motors 
+                  spin at the same time. Press the left bumper to rev up top shooter motor, 
+                  and after a few seconds, press triangle to trigger bottom shooter motor 
+                  and shoot out note. 
 
                 </div>
             </div>
@@ -380,8 +380,8 @@
               
                 <div class = "text-blurb-div">
                     Our robot is a 26 inch chassis with 4 swerve drive modules.
-                    <br>
-                    <br>
+                    
+                    
 
                     <h4 style="text-decoration: underline">Electrical Chassis Plot ↴</h4>
                     <img src="../src/imgs/electrical_chassis_layout.png" alt="Electrical Chassis Layout" />
@@ -397,37 +397,37 @@
                     </div>
                 
                     <div class = "text-blurb-div">
-                        <strong>DUSTY-24B</strong>: The culmination of the chassis, intake mech, and chain <br>
-                        mech. Our strategy revolves around an ambitious yet consistent robot for our <br>
-                        second tournament, MBR. For both tournaments, our robot will contain a <br>
-                        the speaker. Additionally, we will use a climber mech that allows us <br>
-                        to latch onto the chain and lift the robot completely off the ground. Our MBR <br>
-                        design allows us to drive under the stage and do ground intake + amp. <br>
-                        <br>
+                        <strong>DUSTY-24B</strong>: The culmination of the chassis, intake mech, and chain 
+                        mech. Our strategy revolves around an ambitious yet consistent robot for our 
+                        second tournament, MBR. For both tournaments, our robot will contain a 
+                        the speaker. Additionally, we will use a climber mech that allows us 
+                        to latch onto the chain and lift the robot completely off the ground. Our MBR 
+                        design allows us to drive under the stage and do ground intake + amp. 
+                        
 
-                        These mechanisms are powered by code written by the SW-Mech, <br> 
-                        SW-Automation, and SW-Drive subteams: <br>
+                        These mechanisms are powered by code written by the SW-Mech,  
+                        SW-Automation, and SW-Drive subteams: 
                         <ul>
                           <li>
-                            SW-Automation wrote code for pickup and scoring alignment, detecting <br>
-                            AprilTags using the Pupil Apriltags library (with ~2" accuracy on <br>
-                            pose estimations). They did so via a brand new implemented Raspberry <br>
-                            Pi system, learning protocols like SCP and SSH to set up NetworkTables. <br>
-                            They used LEDs to help drivers visually. <br>
+                            SW-Automation wrote code for pickup and scoring alignment, detecting 
+                            AprilTags using the Pupil Apriltags library (with ~2" accuracy on 
+                            pose estimations). They did so via a brand new implemented Raspberry 
+                            Pi system, learning protocols like SCP and SSH to set up NetworkTables. 
+                            They used LEDs to help drivers visually. 
                           </li>
                           
                           <li>
-                            SW-Mech wrote code for the mechanisms through the creation of FSMs <br>
-                            for chain, pivot, and intake. This code triggers different states through various <br>
-                            button presses on the programmed "Mech" PS4 controller. <br>
+                            SW-Mech wrote code for the mechanisms through the creation of FSMs 
+                            for chain, pivot, and intake. This code triggers different states through various 
+                            button presses on the programmed "Mech" PS4 controller. 
                           </li>
                           
 
                           <li>
-                            SW-Drive helped program <a href="/mbr/auto_paths">autonomous paths</a> using complex <br>
-                            Swerve Module path planning pipelines, and the agile and responsive <br>
-                            movement of our Swerve Modules that allows us to dart across the <br>
-                            field with precision. <br>
+                            SW-Drive helped program <a href="/mbr/auto_paths">autonomous paths</a> using complex 
+                            Swerve Module path planning pipelines, and the agile and responsive 
+                            movement of our Swerve Modules that allows us to dart across the 
+                            field with precision. 
                           </li>
                         </ul>
 

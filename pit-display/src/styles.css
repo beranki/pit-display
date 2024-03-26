@@ -331,12 +331,13 @@ html {
 }
 
 .text-blurb-div {
-    width: 70vw;
+    max-width: 35vw;
     text-align: left;
     font-size: 17px;
     float:right;
     color: whitesmoke;
     padding-left: 5px;
+    overflow-wrap: break-word;
 }
 
 .text-lower {
